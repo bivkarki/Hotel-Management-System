@@ -1,0 +1,369 @@
+<html>
+<head>
+	<title>Bill Acoounting</title>
+	<style>
+	table input[type="text"]
+	{	color:red;
+	font-weight: 800;
+	font-size: 15px;
+		
+	}
+	#t14
+	{
+		color:green;
+		background-color: yellow;
+	}
+	table{
+		margin-left: auto;
+		margin-right: auto;
+		width:900px;
+		height:500px;
+		color:white;
+		font-size: 15px;
+		font-weight: 700;
+		word-spacing: 5px;
+		text-align: center;
+		border-color: #333;
+		text-transform: uppercase;
+	}
+	#td1
+	{
+		text-align: right;
+		color:black;
+		font-weight: bold;
+		font-size: 30px;
+	}
+	</style>
+	<script type="text/javascript">
+	function f1()
+	{
+		var quant=Number(document.getElementById("s1").value);
+		var per=195;
+		var prize=quant*per;
+		document.getElementById("t1").value=prize;
+		return prize;
+
+	}
+	function f2()
+	{
+		var quant=Number(document.getElementById("s2").value);
+		var per=150;
+		var prize=quant*per;
+		document.getElementById("t2").value=prize;
+		return prize;
+	}
+	function f3()
+	{
+		var quant=Number(document.getElementById("s3").value);
+		var per=100;
+		var prize=quant*per;
+		document.getElementById("t3").value=prize;
+		return prize;
+	}
+	function f4()
+	{
+		var quant=Number(document.getElementById("s4").value);
+		var per=150;
+		var prize=quant*per;
+		document.getElementById("t4").value=prize;
+		return prize;
+	}
+	function f5()
+	{
+		var quant=Number(document.getElementById("s5").value);
+		var per=200;
+		var prize=quant*per;
+		document.getElementById("t5").value=prize;
+		return prize;
+	}
+	function f6()
+	{
+		var quant=Number(document.getElementById("s6").value);
+		var per=100;
+		var prize=quant*per;
+		document.getElementById("t6").value=prize;
+		return prize;
+	}
+function f7()
+	{
+		var quant=Number(document.getElementById("s7").value);
+		var per=350;
+		var prize=quant*per;
+		document.getElementById("t7").value=prize;
+		return prize;
+	}
+function f8()
+	{
+		var quant=Number(document.getElementById("s8").value);
+		var per=380;
+		var prize=quant*per;
+		document.getElementById("t8").value=prize;
+		return prize;
+	}
+function f9()
+	{
+		var quant=Number(document.getElementById("s9").value);
+		var per=300;
+		var prize=quant*per;
+		document.getElementById("t9").value=prize;
+		return prize;
+	}
+function f10()
+	{
+		var quant=Number(document.getElementById("s10").value);
+		var per=400;
+		var prize=quant*per;
+		document.getElementById("t10").value=prize;
+		return prize;
+	}
+function f11()
+	{
+		var quant=Number(document.getElementById("s11").value);
+		var per=200;
+		var prize=quant*per;
+		document.getElementById("t11").value=prize;
+		return prize;
+	}
+function f12()
+	{
+		var quant=Number(document.getElementById("s12").value);
+		var per=250;
+		var prize=quant*per;
+		document.getElementById("t12").value=prize;
+		return prize;
+}
+function f13()
+	{
+		var quant=Number(document.getElementById("s13").value);
+		var per=150;
+		var prize=quant*per;
+		document.getElementById("t13").value=prize;
+		return prize;
+	}
+	
+	
+	function sum()
+	{
+		var total=f1()+f2()+f3()+f4()+f5()+f6()+f7()+f8()+f9()+f10()+f11()+f12()+f13();
+		document.getElementById("t14").value=total;
+	}
+	</script>
+</head>
+<body background="image/cold.jpg">
+	<a href="sales.html" ><button  style="border:2px solid black;border-radius:9px;font-size: 30px;margin-top: 20px;margin-left: 20px;background-color:#435;cursor: pointer;color:white;">Back <=</button></a>
+	<center><mark style="font-size: 40px;">Place Your Order</mark></center>
+<div>
+	<table border="3px" 
+	style="border-collapse:collapse; line-height:35px;">
+		<tr>
+			<th>S. NO.</th>
+			<th>Item</th>
+			<th>Quantity</th>
+			<th>Price/Pizza</th>
+			<th>Total Price</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Veg pizza</td>
+			<td>
+				<select id="s1" onchange="f1()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>195/-</td>
+			<td><input type="text" id="t1" disabled="true" /></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Chicken pizza</td>
+			<td>
+				<select id="s2" onchange="f2()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>150/</td>
+			<td><input type="text" id="t2" disabled="true"/></td>
+		</tr>
+			<tr>
+			<td>3</td>
+			<td>Aaloo tikki</td>
+		<td>
+				<select id="s3" onchange="f3()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>100/</td>
+			<td><input type="text" id="t3" disabled="true" /></td>
+		<tr>
+			<td>4</td>
+			<td>Chicken Momo</td>
+		<td>
+				<select id="s4" onchange="f4()"oninput="sum()">
+					<option value="0" >Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>150/</td>
+			<td><input type="text" id="t4" disabled="true"/></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Mutton Momo</td>
+			<td>
+				<select id="s5" onchange="f5()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>200/</td>
+			<td><input type="text" id="t5" disabled="true"/></td>
+		</tr>		
+<tr>
+			<td>6</td>
+			<td>Veg-Momo</td>
+			<td>
+				<select id="s6" onchange="f6()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>100/</td>
+			<td><input type="text" id="t6" disabled="true"/></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Chicken Fry</td>
+			<td>
+				<select id="s7" onchange="f7()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>350/</td>
+			<td><input type="text" id="t7" disabled="true"/></td>
+		</tr>
+
+		<tr>
+			<td>8</td>
+			<td>chicken Tandoori</td>
+			<td>
+				<select id="s8" onchange="f8()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>380/</td>
+			<td><input type="text" id="t8" disabled="true"/></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Chicken chilly</td>
+			<td>
+				<select id="s9" onchange="f9()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>300/</td>
+			<td><input type="text" id="t9" disabled="true"/></td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>Chicken Boneless</td>
+			<td>
+				<select id="s10" onchange="f10()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>400/</td>
+			<td><input type="text" id="t10" disabled="true"/></td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>Chicken Burger</td>
+			<td>
+				<select id="s11" onchange="f11()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>200/</td>
+			<td><input type="text" id="t11" disabled="true"/></td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>Ham Burger</td>
+			<td>
+				<select id="s12" onchange="f12()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>250/</td>
+			<td><input type="text" id="t12" disabled="true"/></td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>Veg Burger</td>
+			<td>
+				<select id="s13" onchange="f13()" oninput="sum()">
+					<option value="0">Select</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</td>
+			<td>150/</td>
+			<td><input type="text" id="t13" disabled="true"/></td>
+		</tr>
+		<tr>
+			<td colspan="4" id="td1" >Total Bill:</td>
+			<td><input type="text" id="t14" /></td>
+			
+		</tr>
+	</table>
+	<center>
+<button style="border:2px solid black;border-radius:9px;font-size: 30px;margin-top: 20px;margin-left: 20px;background-color: green;color: white;cursor: pointer;">Confirm Order</button></center>
+	</body>
+</html>	

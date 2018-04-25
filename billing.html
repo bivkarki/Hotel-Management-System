@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Billing
+
+	</title>
+	<link rel="icon" type="image/png" sizes="32*32" href="images\billing.png">
+	<link rel="stylesheet" type="text/css" href="billing.css">
+<script type="text/javascript" src="timer.js">
+</script>
+<script type="text/javascript" src="calculate.js">
+	</script>
+   <script src="jquery-3.3.1.js">
+         </script>
+         <style type="text/css">
+        #home
+        {
+            position: fixed;
+        top: 0;
+        left:0;
+        margin-left: 20px;
+       margin-top:20px;
+
+        }
+        #homeimg
+        {
+            height: 80px;
+            width: 80px;
+            float: left;
+            position: fixed;
+            z-index: 1;
+            
+
+        }
+    </style>
+</head>
+<body >
+<div id="home">
+        <a href="HMS_accesed.html"><img src="image/home.png" title="Go to Home" id="homeimg"></a>
+        
+    </div>
+	<div id="time">
+	Hurry Up! Limited Time Remaining To Avail 20% Discount !!
+	<p style=" text-decoration:underline; font-size: 18px;  text-decoration-color: gold; text-decoration-style:wavy;">Deadline:(24th April,2018)
+	</p>
+	<center><button class="button" onclick="avail()"><span>Avail Now</span></button></center>
+	<div id="titlebar">
+		<ol id="ol">
+			<li>Days</li>
+		    <li>Hours</li>
+			<li>Minutes</li>
+			<li>Seconds</li>
+		</ol>
+	</div>
+	<div id="days"></div>
+
+	<div id="hr"></div>
+	
+	<div id="min"></div>
+
+	<div id="sec"></div>
+
+<br>
+
+   <p style="color:#dcfc3a;font-style: italic; font-size:25px;"><marquee behavior="alternate" bgcolor="red"><b>#NOTE:</b>The time is in reference To IST(Indian Standard Time)</marquee></p>
+	     </div>
+	<div id="details">
+		<form>
+<legend style="font-family: monospace;"> 
+BOOKING
+</legend>
+<table>
+<tr>
+<td><label>FIRST NAME:</label></td><td><input type="text" name="FNAME" placeholder="FIRST NAME" width="30" maxlength="25" id="t1" onfocus="f1()" onblur="f0()">
+</td>
+</tr>
+<tr>
+	<td>
+<label>LAST NAME:</label></td><td><input type="text" name="LNAME" placeholder="LAST NAME" width="30" maxlength="25" id="t2" onfocus="f2()" onblur="f0()" >
+</td></tr>
+<tr>
+	<td><label>ENTER YOUR AGE:</label></td><td><input type="text" name="AGE" placeholder="Enter your age" width="30" maxlength="3" id="t3" onfocus="f3()" onblur="f0()" ><br>
+<tr>
+	<td><label>GENDER:</label></td>
+	<td id="rad">
+<input type="radio" name="gender" value="Male" >Male
+<input type="radio" name="gender" value="Female" >Female
+<input type="radio" name="gender" value="Other" id="gender" checked>Other
+</td>
+<tr>
+	<td>
+<label>ENTER YOUR CONTACT NUMBER:</label></td><td><input type="text" name="Contact" placeholder="Enter your contact number" width="30" maxlength="10" id="t4" >
+</td>
+</tr>
+<tr><td>
+<label>ENTER YOUR EMAIL:</label></td><td><input type="EMAIL" name="EMAIL" placeholder="Enter your Email Id" width="30" maxlength="25" id="t5" onfocus="f5()"onblur="f0()" >
+</td>
+</tr>
+
+<tr><td>
+<label>Hotel Type:</label></td>
+<td>
+<select id="sel1">
+<option>Choose your Hotel Type </option>
+<option>5 Star </option>
+<option>4 Star</option>
+<option>3 Star</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<label>Room type:</label></td>
+<td>
+<select id="sel2"  >
+<option>Choose your Room Type </option>
+<option>Single Bed </option>
+<option>Double Bed</option>
+<option>Family Room</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<label>Check In Date:</label></td>
+<td>
+<input type="date" id="date1"> 
+</td>
+</tr>
+<tr><td>
+<label>Check Out Date:</label></td>
+<td>
+<input type="date" id="date2" onchange="cal()"> 
+</td>
+</tr>
+ 
+</td>
+<tr><td>
+<label>Discount Availed(In %):</label></td><td><input type="text" name="amount"  placeholder="Discount Availed To user" width="20" maxlength="3" id="discount" value=0 readonly>
+</td>
+</tr>
+<tr><td>
+<label>AMOUNT TO BE PAID:</label></td><td><input type="text" name="amount"  placeholder="amount" width="20" maxlength="10" id="dollar" readonly /> 
+</td>
+</tr>
+<tr><td>
+<label>AMOUNT TO BE PAID(IN Rs.):</label></td><td><input type="text" name="amountrs"  placeholder="Amount in Rupee" width="20" maxlength="10" id="rupee" readonly></td></tr>
+<tr><td>
+<label>DETAILS:</label>
+</td><td><textarea rows=5 cols=40>
+Enter your kind details here.....
+
+NOTE:These details may be asked for the verification purpose.
+</textarea>
+</td></tr>
+<tr class="center">
+    <td colspan="2">
+<input type="BUTTON" id="book" value="Book" onclick="validate()" />
+</td>
+</tr>
+<tr class="center">
+    <td colspan="2">
+<input type="reset" id="clear" value="Clear">
+</td>
+</tr>
+</table>
+
+<BR>
+
+
+</form>
+
+
+	</div>
+<div id="overlay" >
+    <button onclick="off()" id="close" onmouseover="show()" onmouseout="hide()">X</button>
+    <div id="msg">Click Here To Close</div>
+    <div id="reciept">
+
+    <table>
+        <caption>Final Reciept</caption>
+    <tr>
+        <td><label>Name:</label></td><td><label id="l1" ></label></td>
+            
+    </tr>
+    <tr>
+        <td><label>Age:</label></td><td><label id="l2"></label></td>
+            
+    </tr>
+     <tr>
+        <td><label>Gender:</label></td><td><label id="l5"></label></td>
+          
+    <tr>
+        <td><label>Email:</label></td><td><label id="l3"></label></td>
+            
+    </tr>
+    <tr>
+        <td><label>Contact No.:</label></td><td><label id="l4"></label></td>
+            
+    </tr>
+     
+    </tr>
+    <tr>
+        <td><label>Hotel type:</label></td><td><label id="l6"></label></td>
+            
+    </tr>
+
+    <tr>
+        <td><label>Room Type:</label></td><td><label id="l7"></label></td>
+            
+    </tr>
+    <tr>
+        <td><label>Checkin Date:</label></td><td><label id="l8"></label></td>
+            
+    </tr>
+    <tr>
+        <td><label>Checkout Date:</label></td><td><label id="l9"></label></td>
+            
+    </tr>
+    <tr>
+        <td><label>Amount to be paid:</label></td><td><label id="l10"></label></td>
+            
+    </tr>
+    </table>
+    <button onclick="payment()" id="payment">Make Payment</button>
+    </div>
+    
+
+</div>
+<div id="error">
+    <p style="color:red">Sorry for inconvenience :( </p>
+    <p>
+    According To Our Criteria You need to be over the age of 18 and above for booking of hotel rooms!!
+</p>
+    </div>
+    <script>
+       
+         $(":radio").click(function()
+        {
+
+$(this).attr("id","gender");
+a=$(this).attr("value");
+document.getElementById("gender").value=a;
+        });
+    </script>
+</body>
+</html>

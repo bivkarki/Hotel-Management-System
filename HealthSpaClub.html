@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><title>HealthSpa Club</title>
+<head>
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+   $(document).ready(function(){  
+    $("button").click(function(){  
+        $("#if1").fadeIn();  
+         
+    });  
+});  
+</script>
+
+
+
+<style>
+.btn-group .button 
+   {
+    background-color: grey;
+    color: white;
+    padding: 10px 40px;
+    font-size: 21px;
+    border: none;
+    }
+.btn-group .button:hover 
+   {
+    background-color: rgb(200,0,0);
+    align: center;
+   } 
+    .btn-group
+    {
+     background-color:grey;
+     margin:auto;
+    }
+}
+</style>
+</head>
+<body>
+
+
+<center>
+<div class="btn-group">
+  <a href="HMS_accesed.html" ><button class="button" >Home</button></a>
+  <a href="HealthSpaClub/HSC_Staff.html" target="if1"><button class="button" target="if1">Staff</button></a>
+  <a href="HealthSpaClub/HSC_AS.html" target="if1"><button class="button" target="if1">Aerobics Schedule</button></a>
+  <a href="HealthSpaClub/HSC_Gallery.html" target="if1"><button class="button" target="if1">Gallery</button></a>
+  <a href="HealthSpaClub/HSC_Test.html" target="if1"><button class="button" target="if1">Testimonials</button></a>
+</div>
+</center>
+
+
+<iframe id="if1" src="HealthSpaClub/HSC_Home.html" width="100%" height="1200px" frameborder="0" 
+marginheight="50px" marginwidth="10px" name="if1">
+  
+</iframe>
+
+</body>
+</html>
+<script src="jquery-3.3.1.js">
+  $("button").click(function()
+  {
+      //$("a").attr({" href":"pay.html" ,"target"="frame"});
+      $("#frame").attr("src","pay.html");
+  });
+</script>

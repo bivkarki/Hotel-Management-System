@@ -1,0 +1,129 @@
+<html>
+<head>
+<script src="jquery-3.3.1.js">
+</script>
+<style>
+div.background {
+    background: url(image/bg.jpg) repeat;
+    border: 2px solid black;
+}
+
+div.transbox {
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+body
+{
+    margin:0;
+}
+
+</style>
+</head>
+<title></title>
+<body>
+
+    <b>
+
+<div class="background">
+    <a href="HMS_accesed.html"><Button  style="border:2px solid white;font-size: 30px;margin-top: 20px;margin-left: 20px;background-color: #325;color: white;cursor: pointer;">HOME</button></a>
+  <div class="transbox">
+<center><marquee><h1><u><b>Banquet Hall Reservation</h1></u></b></marquee></center>
+<div>
+<form>
+Reserved By:<br>
+<input type="text"></input><br>
+Date of Event:<br>
+<input type="text"></input><br>
+Guest Name:<br>
+<input type="text"></input><br>
+Time Of Event:<br>
+<input type="text"></input><br>
+Organization:<br>
+<input type="text"></input><br>
+Expected number of guest:<br>
+<input type="text"></input><br>
+Type of Event:<br>
+<input type="text"></input><br>
+Phone:<br>
+<input type="text"></input><br>
+Contact person:<br>
+<input type="text"></input><br>
+Email:<br>
+<input type="text"></input><br><br>
+<h3><b><u>Set Up Requirements</u></b></h3>
+Table Type:<input type="text"></input>
+Number of Tables:<input type="text"></input>
+Type of Room Required:
+<input type="radio" name="a" value="ab">Classroom</input>
+<input type="radio" name="a" value="ac">Banquet</input>
+<input type="radio" name="a" value="ad">U Shaped</input>
+<input type="radio" name="a" value="ae">Meeting Hall</input><br>
+Number of Chairs per Table :<input type="text"></input>
+Other Requirements:
+<input type="checkbox" name="zv" value="abc">Paper/pen</input>
+<input type="checkbox" name="zc" value="acd">Screen</input>
+<input type="checkbox" name="zd" value="adb">Projector</input>
+<input type="checkbox" name="zs" value="aed">Microphone</input>
+<input type="checkbox" name="zx" value="abd">Napkins</input><br>
+Estimated Time To Decorate(in hours):<input type="text"></input>
+Arriving Date:-<input type="text"></input>	Ending Time:-<input type="text"></input>		
+Ending Date:-  <input type="text"></input>	Ending Time:-<input type="text"></input>
+<h4><b><u>Food Requirements:</h4></b></u>
+Number of People:<input type="text"></input>
+Type Of Meal:
+<input type="checkbox" name="zv" value="abc">Breakfast</input><input type="checkbox" name="zc" value="acd">Lunch</input><input type="checkbox" name="zd" value="adb">Supper</input><input type="checkbox" name="zs" value="abffd">Snacks/coffee/tea</input><br>
+Type of Service:
+<input type="radio" name="a" value="acb">Buffet</input><input type="radio" name="a" value="adb">Table Service</input><input type="radio" name="a" value="aeb">other</input><br>
+<Button type="Submit" id="i1" style="border:2px solid black;font-size: 20px;margin-top: 20px;margin-left: 20px;background-color:green;color: white;cursor: pointer;">Submit</button>
+<Button type="Reset" style="border:2px solid black;font-size: 20px;margin-top: 20px;margin-left: 20px;background-color: red;color: white;cursor: pointer;">Reset</button><br>
+<center><h2><a href="contactus.html" style="text-decoration: none;cursor: pointer;">For more contact us</a></h2></center>
+</form>
+</div>
+</div>
+</div></b>
+<script>
+$("#i1").click(function(){
+    alert("Your record has been saved.");
+});
+</script>
+</body>
+</html>

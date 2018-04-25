@@ -1,0 +1,135 @@
+
+
+<html> 
+<head>             
+<title>Make Payment</title>
+<script src="jquery-3.3.1.js"></script>
+<style>
+#pay
+{
+	text-align: center;
+		background-image: url("image/pay.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+#pay table 
+{
+width: 1024px;
+height: 350px;
+font-family: sans-serif;
+font-size: 35px;
+padding: 40px;
+margin-left: 210px;
+}
+#pay input[type="text"],input[type="month"],input[type="number"]
+{
+	height: 60%;
+	width:80%;
+ 
+ border:1.5px solid blue;
+color:#264d73;yellow;
+font-size: 30px;
+}
+button
+{ 
+	height: 10%;
+	font-size: 25px;
+	border-radius:8px;
+	background-color:  #00cccc;
+	font-weight: 700;
+	font-family: monospace;
+	border:2px solid white;
+	color:#339;
+	text-align: center;
+	margin-top: 100px;
+	cursor: pointer;
+}
+button:hover
+{
+	box-shadow:5px 5px 15px rgba(255,255,255,.6);
+	z-index: 1;
+	color:white;
+}
+#pay
+{
+	height:100% ;
+	width: auto;
+	border:2px solid grey;
+
+}
+body
+{
+margin:0;
+}
+#home
+   {
+            position: fixed;
+        top: 0;
+        left:0;
+        margin-left: 40px;
+       margin-top:20px;
+
+        }
+        #homeimg
+        {
+            height: 80px;
+            width: 80px;
+            float: left;
+            position: fixed;
+            z-index: 1;
+            
+
+        }
+</style>
+</head>
+<script>
+function pay()
+{
+	if( (document.getElementById("t1").value== "") || (document.getElementById("t1").value.length!=16) || isNaN(document.getElementById("t1").value))
+         {
+         	alert("\nPlease Enter Your Correct Card Number" );
+            document.getElementById("t1").focus() ;
+            return false;
+        }
+        if( document.getElementById("t2").value== "" )
+        {
+        	alert("Please provide us Card Holder Name!" );
+            document.getElementById("t2").focus() ;
+            return false;
+        }
+        if( document.getElementById("t3").value== "" || document.getElementById("t3").value.length<3 || isNaN(document.getElementById("t3").value))
+         {alert( "Please provide  Correct CVV Number!" );
+            document.getElementById("t3").focus() ;
+            return false;
+        }
+        if(document.getElementById("exp").value=="")
+{
+alert("Please Enter Expiry Date of Card");
+	return false;	
+}
+        
+window.alert("Payment has been succesfully done");
+window.alert("Redirecting to the homePage............");
+
+document.location="HMS_accesed.html";
+}
+</script>
+<body>
+	<div id="home">
+        <a href="HMS_accesed.html"><img src="image/home.png" title="Go to Home" id="homeimg"></a>
+        
+    </div>
+	<div id="pay">
+<center><span style="font-style:Verdana;font-size:55px;font-style: italic;color:white;">Fill The Information Correctly</span></center>
+	<table>
+<tr><td>Enter your Card Number:</td><td> <input type="text" name="CARD NO." id="t1" maxlength="16"  /></td></tr>
+<tr><td>Enter the Card Holder Name:</td><td> <input type="text" name="NAME" id="t2" /></td></tr>
+<tr><td>CVV Number:</td><td> <input type="text" name="CVV" maxlength="3" id="t3" /></td></tr>
+<tr><td>Expiry (MM-YY):<td> <input type="month" name="card" min="2018-4" max="2027-12" id="exp"></td></tr>
+
+</table>
+<center><button onclick="pay()" >Make Payment</button></center>
+</div>
+</body>
+</html>

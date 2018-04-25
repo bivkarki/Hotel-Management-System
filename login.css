@@ -1,0 +1,131 @@
+body
+{
+margin:0;
+padding: 0;
+background: url('image/logbg.jpg ');
+background-size:cover;
+font-family: sans-serif;
+
+}
+.loginbox
+{
+	position: absolute;
+	margin-top:3.2%;
+	margin-left:31.2%;
+	width:580px;
+	height:530px;
+	background:	rgba(230, 230, 230,0.5);
+border:2.5px solid orange;
+border-radius: 25px;
+box-shadow: 8px 12px 20px #333;
+
+}
+.user
+{
+	width: 100px;
+	height:100px;
+	margin-top:-50px;
+	margin-left:239px;
+	border-radius: 50px;
+border:2px solid black;
+overflow:hidden;
+background:#1aff8c;
+}
+
+legend
+	{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+
+
+}
+label
+{   font-size: 22px;
+	font-weight: bold;
+	color:navy;
+	
+	text-transform: uppercase;
+	margin-left: 15px;
+}
+h2
+{
+	padding: 0 0 20px;
+	text-align:center;
+	color:#3366cc; yellow;
+	font-family: arial;
+	font-size:28px;
+}
+input
+{
+	margin-bottom: 20px;
+	margin-left: 45%;
+ 
+ height: 35px;
+}
+.loginbox input[type="text"],.loginbox input[type="password"]
+{
+ height:35px;
+ width:75%;
+ margin-left:80px;
+ border:1.5px solid blue;
+ margin-bottom: 20px;
+ color:#cc99ff; #339966
+; #00cc66
+;purple;
+ background: rgba(235, 235, 224,0.5);
+ font-size: 22px;
+
+}
+.b1
+{
+	height:50px;
+	width:50%;
+	color:White;
+	font-size:18px;
+	background-color: #ff0a1a;
+	letter-spacing: 2px;
+	border-radius: 15px;
+cursor: pointer;
+}
+.b1:hover
+{  font-family: arial;
+	letter-spacing: 3px;
+font-size: 25px;
+background-color:  #248024;
+box-shadow:10px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1);	
+}
+.loginbox a
+{  
+	color:blue;
+	text-decoration: none;
+	font-size: 25px;
+	letter-spacing: 0.6px;
+}
+a:hover
+{
+	font-size: 30px;
+}
+h1
+{
+	font-family: Rosewood Std;
+	font-size: 55px;
+	letter-spacing: 4px;
+
+
+}
+#dd
+{
+	border-radius: 10px;
+	height:35px;
+ width:75%;
+	border:1.5px solid blue;
+margin-left:80px;
+color:green;
+font-size: 20px;
+font-family: Verdana;
+background-color:rgba(255,0,0,0);
+}
+td{
+	padding-left: 15px;
+}

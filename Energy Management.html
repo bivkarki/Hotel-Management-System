@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><title>Energy Management</title>
+<head>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.btn-group .button').click(function () {
+                ("#if1").fadeToggle();
+            });
+        });  
+</script>
+
+
+<style>
+.btn-group .button 
+   {
+    background-color: grey;
+    color: white;
+    padding: 10px 15px;
+    font-size: 21px;
+    border: none;
+    }
+.btn-group .button:hover 
+   {
+    background-color: rgb(0,0,200);
+    align: center;
+   } 
+    .btn-group
+    {
+     background-color:grey;
+     margin:auto;
+    }
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+
+<h1 id="#h1">Energy Management System</h1>
+<center>
+<div class="btn-group">
+
+  <a href="HMS_accesed.html"><button class="button">Home</button></a>
+  <a href="Energy Management/Automatic Generation Control Software.html" target="if1"><button class="button" target="if1">AGC</button></a>
+  <a href="Energy Management/Interchange Scheduling.html" target="if1"><button class="button" target="if1">Interchange Scheduling</button></a>
+  <a href="Energy Management/Supervisory Control.html" target="if1"><button class="button" target="if1">Supervisory Control</button></a>
+  <a href="Energy Management/Unit Commitment.html" target="if1"><button class="button" target="if1">Unit Commitment</button></a>
+  <a href="Energy Management/Economic Dispatch.html" target="if1"><button class="button" target="if1">Economic Dispatch</button></a>
+  
+</div>
+</center>
+
+
+<iframe id="if1" src="Energy Management/Home.html" width="1056px" height="2000px" frameborder="0" 
+marginheight="50px" marginwidth="10px" name="if1">
+  
+</iframe>
+
+</body>
+</html>

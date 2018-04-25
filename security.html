@@ -1,0 +1,146 @@
+<html>
+<head>
+<script src="jquery-3.3.1.js">
+</script>
+<script>
+$("#i1").click(function(){
+alert("Your record has been saved.");
+});
+</script>
+<style>
+div.background {
+background: url(image/security-guard.jpg) repeat;
+border: 2px solid black;
+
+}
+div.transbox {
+margin: 10px;
+background-color: #111;
+border: 1px solid black;
+opacity: 0.8;
+filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+div.transbox p {
+margin: 5%;
+font-weight: bold;
+color: #000000;
+}
+
+div {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding:30px;
+
+}
+ div.bottom
+        {
+            height: 200px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: none;
+            margin-bottom: none;
+            border-top: 4px solid #00ccff;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: #575757;
+        }
+		li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+	input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=submit] {
+width: 100%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type=submit]:hover {
+background-color: #45a049;
+}
+body
+{
+    margin:0;
+}
+
+</style>
+</head>
+<title></title>
+<body>
+<div class="background">
+    <a href="HMS_accesed.html"><Button  style="border:2px solid white;font-size: 30px;margin-top: 20px;margin-left: 20px;background-color: #354665;color: white;cursor: pointer;">HOME</button></a>
+<div class="transbox">
+
+
+ 
+   <div class="bullets">
+   <center><font size="100px"><b>Security</b></font></center>
+            <ul class="bullets-list">
+                <li class="bullets-item">Complete restaurant security solutions</li>
+                <li class="bullets-item">Integrated video surveillance with 24/7 monitoring and recording</li>
+                <li class="bullets-item">Intrusion detection to fight theft whether open or closed</li>
+                <li class="bullets-item">Commercial fire and life safety systems to protect staff, customers and property</li>
+                <li class="bullets-item">Temperature and humidity monitoring in freezers and other critical areas</li>
+                <li class="bullets-item">Access control systems to manage access to sensitive areas</li>
+            </ul>
+
+            <ul class="bullets-list">
+                <li class="bullets-item">Fleet management to monitor delivery drivers and vehicles in real time</li>
+                <li class="bullets-item">Video analytics for insights into customer traffic, customer service and maximizing restaurant profitability</li>
+                <li class="bullets-item">Remote video escort service for cash handling events</li>
+                <li class="bullets-item">Web-enabled remote management for total control from anywhere</li>
+            </ul>
+      
+  </div>
+
+</div>
+<div>
+
+<center><font size="100px"><b>File a complaint</b></font></center>
+<br>
+<form>
+Name:<br>
+<input type="text"></input><br>
+Email:<br>
+<input type="text"></input><br>
+Phone number<br>
+<input type="text"></input><br>
+best time to contact you<br>
+<input type="text"></input><br>
+Name(s) of Witness(es), if applicable<br>
+<textarea rows="10" cols="50">Enter name here...</textarea>
+<br>
+enter a date of incident:<br>
+<input type="date" name="bday" min="2000-01-02">
+<br>
+time of incident:<br>
+<input type="text"></input>
+description of incident:
+<br>
+<textarea rows="10" cols="50">Enter description here...</textarea>
+<br>
+
+Complain against:
+<input type="checkbox" name="zv" value="abc">service</input><input type="checkbox" name="zc" value="acd">staff</input><input type="checkbox" name="zd" value="adb">manager</input><input type="checkbox" name="zs" value="abffd">other</input><br>
+<Button type="Submit" id="i1" style="border:2px solid black;font-size: 20px;margin-top: 20px;margin-left: 20px;background-color: blue;color: white;cursor: pointer;">Submit</button>
+<Button type="Reset" style="border:2px solid black;font-size: 20px;margin-top: 20px;margin-left: 20px;background-color: red;color: white;cursor: pointer;">Reset</button><br>
+<center><a href="#"><font color="blue"><b>For more contact us</b></font></a></center>
+</form>
+</div>
+</div>
+
+</body>
+</html>
