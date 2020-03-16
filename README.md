@@ -1,2 +1,2 @@
-# Hotel-Management-Sysem
+# Hotel-Management-System
 Use of HTML, CSS , jQuery , JavaScript,BootStrap
